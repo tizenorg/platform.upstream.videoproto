@@ -1,5 +1,5 @@
 Name:           videoproto
-Version:        2.3.1
+Version:        2.3.2
 Release:        1
 License:        MIT
 Summary:        X
@@ -22,7 +22,7 @@ cp %{SOURCE1001} .
 
 %build
 
-%configure --disable-static \
+%autogen --disable-static \
              --libdir=%{_datadir} \
              --without-xmlto
 
