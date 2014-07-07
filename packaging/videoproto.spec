@@ -11,6 +11,10 @@ Source1001: 	videoproto.manifest
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(xorg-macros)
 
+%if !%{with x}
+ExclusiveArch:
+%endif
+
 %description
 Description: %{summary}
 This extension provides a protocol for a video output mechanism,
