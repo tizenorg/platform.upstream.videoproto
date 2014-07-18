@@ -1,3 +1,5 @@
+%bcond_with x
+
 Name:           videoproto
 Version:        2.3.2
 Release:        1
